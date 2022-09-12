@@ -4,7 +4,7 @@ Documentation  Suite description #automated tests for scout website
 
 
 *** Variables ***
-${LOGIN URL}       https://scouts.futbolkolektyw.pl/en/
+${LOGIN URL}       https://scouts-test.futbolkolektyw.pl/en
 ${BROWSER}         Chrome
 ${SIGNINBUTTON}    xpath=//*[(text()= 'Sign in')]
 ${EMAILINRUT}     xpath=//*[@id='login']
@@ -34,5 +34,4 @@ Assert dashboard
     wait until element is visible   ${PAGELOGO}
     title should be    Scouts panel
     Capture Page Screeshot   alert.png
-
 
